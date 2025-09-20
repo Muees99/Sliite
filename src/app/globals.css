@@ -23,3 +23,65 @@ h6 {
     text-wrap: balance;
   }
 }
+
+
+
+.opacity-1 {
+  opacity: 1%;
+}
+
+/* ======MISCELLANEOUS========= */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #42454a;
+  border-radius: 8px;
+}
+
+::selection {
+  color: white;
+  background: #42454a;
+}
+
+/* .no-scroll::-webkit-scrollbar {
+  width: 0px;
+} */
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* global.css or tailwind.config.css */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
